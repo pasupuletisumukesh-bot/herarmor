@@ -11,7 +11,8 @@
     <p id="selected-info" style="margin: 0;">Click on a marker to view safety information.</p>
   </div>
 
-  <script>
+  <script type="module">
+    import { loadDataFromSupabase } from './supabase.js';
     function initMap() {
       const tamilNadu = { lat: 11.1271, lng: 78.6569 };
 
@@ -30,13 +31,8 @@
       });
     }
 
-    function addMarkersFromJson(map) {
-      fetch('combined_data.json')
-        .then(response => {
-          if (!response.ok) throw new Error('Failed to load JSON');
-          return response.json();
-        })
-        .then(data => {
+    async function addMarkersFromSupabase(map) {
+      const data = await loadDataFromSupabase();
           data.forEach(item => {
             const point = {
               name: item.place,
@@ -108,7 +104,7 @@
         }
       });
 
-      addMarkersFromJson(map);
+      addMarkersFromSupabase(map);
     }
 
     window.onload = initMap;
