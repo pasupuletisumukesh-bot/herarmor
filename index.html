@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tamil Nadu Map</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2JCOhMc5BqxilF_ppAOAg_yIo-EVfDFo"></script>
+</head>
+<body>
+  <div id="map" style="height: 80vh;"></div>
+  <div id="info-panel" style="height: 20vh; background: #f0f0f0; padding: 10px; overflow-y: auto; border-top: 2px solid #333; font-size: 14px;">
+    <h3 style="margin: 0 0 10px 0;">Selected Area Safety Details</h3>
+    <p id="selected-info" style="margin: 0;">Click on a marker to view safety information.</p>
+  </div>
+
+  <script>
+    function initMap() {
+      const tamilNadu = { lat: 11.1271, lng: 78.6569 };
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 7,
+        center: tamilNadu,
+        restriction: {
+          latLngBounds: {
+            north: 13.5,
+            south: 8.0,
+            west: 76.0,
+            east: 80.5
+          },
+          strictBounds: true
+        }
+      });
+    }
+
+    function addMarkersFromJson(map) {
+      fetch('combined_data.json')
+        .then(response => {
+          if (!response.ok) throw new Error('Failed to load JSON');
+          return response.json();
+        })
+        .then(data => {
+          data.forEach(item => {
+            const point = {
+              name: item.place,
+              lat: item.location.lat,
+              lng: item.location.lng,
+              district: item.district || 'Vellore',
+              score: item.crime.score,
+              category: item.crime.category,
+              rape_cases: item.crime.rape_cases,
+              women_cases: item.crime.women_cases,
+              safe_time: item.safety_time.safe,
+              unsafe_time: item.safety_time.unsafe
+            };
+
+            let color = 'blue'; // default
+            if (point.category.includes('Green')) color = 'green';
+            else if (point.category.includes('Yellow')) color = 'yellow';
+            else if (point.category.includes('Red')) color = 'red';
+
+            const marker = new google.maps.Marker({
+              position: { lat: point.lat, lng: point.lng },
+              map,
+              title: point.name,
+              icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 8,
+                fillColor: color,
+                fillOpacity: 1,
+                strokeColor: 'white',
+                strokeWeight: 2
+              }
+            });
+
+            const info = new google.maps.InfoWindow({
+              content: `<strong>${point.name}</strong><br/>District: ${point.district}<br/>Score: ${point.score}<br/>Category: ${point.category}`
+            });
+
+            marker.addListener('click', () => {
+              info.open(map, marker);
+              const safeText = point.safe_time ? `<span style="color: green; font-weight: bold;">Safe: ${point.safe_time}</span>` : 'Safety times not available';
+              const unsafeText = point.unsafe_time ? `<span style="color: red; font-weight: bold;">Unsafe: ${point.unsafe_time}</span>` : '';
+              document.getElementById('selected-info').innerHTML = `
+                <strong>${point.name}</strong> (${point.district})<br/>
+                Crime Score: ${point.score} | Category: ${point.category}<br/>
+                ${point.rape_cases > 0 ? `Rape Cases: ${point.rape_cases} | Women Cases: ${point.women_cases}<br/>` : ''}
+                ${safeText}<br/>
+                ${unsafeText}
+              `;
+            });
+          });
+        })
+        .catch(err => console.error('JSON load error:', err));
+    }
+
+    function initMap() {
+      const tamilNadu = { lat: 11.1271, lng: 78.6569 };
+
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 7,
+        center: tamilNadu,
+        restriction: {
+          latLngBounds: {
+            north: 13.5,
+            south: 8.0,
+            west: 76.0,
+            east: 80.5
+          },
+          strictBounds: true
+        }
+      });
+
+      addMarkersFromJson(map);
+    }
+
+    window.onload = initMap;
+  </script>
+</body>
+</html>

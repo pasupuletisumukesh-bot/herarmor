@@ -1,0 +1,688 @@
+﻿[
+    {
+        "place":  "Vellore City Center",
+        "crime":  {
+                      "score":  96,
+                      "category":  "Yellow (Moderate)",
+                      "women_cases":  120,
+                      "rape_cases":  18
+                  },
+        "location":  {
+                         "lat":  12.9165,
+                         "lng":  79.1325
+                     },
+        "safety_time":  {
+                            "safe":  "6 AM - 9 PM",
+                            "unsafe":  "9 PM - 6 AM"
+                        }
+    },
+    {
+        "place":  "Katpadi Junction",
+        "crime":  {
+                      "score":  75.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  95,
+                      "rape_cases":  14
+                  },
+        "location":  {
+                         "lat":  12.9693,
+                         "lng":  79.1452
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "CMC Hospital Area",
+        "crime":  {
+                      "score":  87,
+                      "category":  "Yellow (Moderate)",
+                      "women_cases":  110,
+                      "rape_cases":  16
+                  },
+        "location":  {
+                         "lat":  12.9245,
+                         "lng":  79.135
+                     },
+        "safety_time":  {
+                            "safe":  "6 AM - 9 PM",
+                            "unsafe":  "9 PM - 6 AM"
+                        }
+    },
+    {
+        "place":  "Bagayam",
+        "crime":  {
+                      "score":  64,
+                      "category":  "Green (Safe)",
+                      "women_cases":  80,
+                      "rape_cases":  12
+                  },
+        "location":  {
+                         "lat":  12.9005,
+                         "lng":  79.1378
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Sathuvachari",
+        "crime":  {
+                      "score":  80,
+                      "category":  "Green (Safe)",
+                      "women_cases":  100,
+                      "rape_cases":  15
+                  },
+        "location":  {
+                         "lat":  12.9301,
+                         "lng":  79.16
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Gandhi Nagar",
+        "crime":  {
+                      "score":  68.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  85,
+                      "rape_cases":  13
+                  },
+        "location":  {
+                         "lat":  12.938,
+                         "lng":  79.148
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Thorapadi",
+        "crime":  {
+                      "score":  59.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  75,
+                      "rape_cases":  11
+                  },
+        "location":  {
+                         "lat":  12.904,
+                         "lng":  79.1505
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Kagithapatarai",
+        "crime":  {
+                      "score":  55,
+                      "category":  "Green (Safe)",
+                      "women_cases":  70,
+                      "rape_cases":  10
+                  },
+        "location":  {
+                         "lat":  12.9502,
+                         "lng":  79.1605
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Adukkamparai",
+        "crime":  {
+                      "score":  48,
+                      "category":  "Green (Safe)",
+                      "women_cases":  60,
+                      "rape_cases":  9
+                  },
+        "location":  {
+                         "lat":  12.885,
+                         "lng":  79.14
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Virupatchipuram",
+        "crime":  {
+                      "score":  73,
+                      "category":  "Green (Safe)",
+                      "women_cases":  90,
+                      "rape_cases":  14
+                  },
+        "location":  {
+                         "lat":  12.92,
+                         "lng":  79.12
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Konavattam",
+        "crime":  {
+                      "score":  91.5,
+                      "category":  "Yellow (Moderate)",
+                      "women_cases":  115,
+                      "rape_cases":  17
+                  },
+        "location":  {
+                         "lat":  12.94,
+                         "lng":  79.11
+                     },
+        "safety_time":  {
+                            "safe":  "6 AM - 9 PM",
+                            "unsafe":  "9 PM - 6 AM"
+                        }
+    },
+    {
+        "place":  "Alamelumangapuram",
+        "crime":  {
+                      "score":  68.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  85,
+                      "rape_cases":  13
+                  },
+        "location":  {
+                         "lat":  12.96,
+                         "lng":  79.13
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Ranipet Main",
+        "crime":  {
+                      "score":  84.5,
+                      "category":  "Yellow (Moderate)",
+                      "women_cases":  105,
+                      "rape_cases":  16
+                  },
+        "location":  {
+                         "lat":  12.9273,
+                         "lng":  79.3333
+                     },
+        "safety_time":  {
+                            "safe":  "6 AM - 9 PM",
+                            "unsafe":  "9 PM - 6 AM"
+                        }
+    },
+    {
+        "place":  "Arcot Town",
+        "crime":  {
+                      "score":  64,
+                      "category":  "Green (Safe)",
+                      "women_cases":  80,
+                      "rape_cases":  12
+                  },
+        "location":  {
+                         "lat":  12.9047,
+                         "lng":  79.3187
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Walajapet Market",
+        "crime":  {
+                      "score":  59.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  75,
+                      "rape_cases":  11
+                  },
+        "location":  {
+                         "lat":  12.9254,
+                         "lng":  79.3665
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Melvisharam",
+        "crime":  {
+                      "score":  55,
+                      "category":  "Green (Safe)",
+                      "women_cases":  70,
+                      "rape_cases":  10
+                  },
+        "location":  {
+                         "lat":  12.948,
+                         "lng":  79.25
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Kalavai Road",
+        "crime":  {
+                      "score":  43.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  55,
+                      "rape_cases":  8
+                  },
+        "location":  {
+                         "lat":  12.77,
+                         "lng":  79.3
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Ambur Town",
+        "crime":  {
+                      "score":  75.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  95,
+                      "rape_cases":  14
+                  },
+        "location":  {
+                         "lat":  12.7916,
+                         "lng":  78.7166
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Vaniyambadi Market",
+        "crime":  {
+                      "score":  80,
+                      "category":  "Green (Safe)",
+                      "women_cases":  100,
+                      "rape_cases":  15
+                  },
+        "location":  {
+                         "lat":  12.6816,
+                         "lng":  78.6208
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Pernambut Center",
+        "crime":  {
+                      "score":  48,
+                      "category":  "Green (Safe)",
+                      "women_cases":  60,
+                      "rape_cases":  9
+                  },
+        "location":  {
+                         "lat":  12.9342,
+                         "lng":  78.7177
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Gudiyatham Bus Stand",
+        "crime":  {
+                      "score":  68.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  85,
+                      "rape_cases":  13
+                  },
+        "location":  {
+                         "lat":  12.946,
+                         "lng":  78.8738
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Tirupattur Town",
+        "crime":  {
+                      "score":  87,
+                      "category":  "Yellow (Moderate)",
+                      "women_cases":  110,
+                      "rape_cases":  16
+                  },
+        "location":  {
+                         "lat":  12.495,
+                         "lng":  78.5678
+                     },
+        "safety_time":  {
+                            "safe":  "6 AM - 9 PM",
+                            "unsafe":  "9 PM - 6 AM"
+                        }
+    },
+    {
+        "place":  "Natrampalli",
+        "crime":  {
+                      "score":  39,
+                      "category":  "Green (Safe)",
+                      "women_cases":  50,
+                      "rape_cases":  7
+                  },
+        "location":  {
+                         "lat":  12.6,
+                         "lng":  78.5
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Jolarpet Junction",
+        "crime":  {
+                      "score":  64,
+                      "category":  "Green (Safe)",
+                      "women_cases":  80,
+                      "rape_cases":  12
+                  },
+        "location":  {
+                         "lat":  12.57,
+                         "lng":  78.58
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Sholinghur Road",
+        "crime":  {
+                      "score":  55,
+                      "category":  "Green (Safe)",
+                      "women_cases":  70,
+                      "rape_cases":  10
+                  },
+        "location":  {
+                         "lat":  13.12,
+                         "lng":  79.42
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Kaveripakkam",
+        "crime":  {
+                      "score":  59.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  75,
+                      "rape_cases":  11
+                  },
+        "location":  {
+                         "lat":  12.91,
+                         "lng":  79.45
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Latteri",
+        "crime":  {
+                      "score":  48,
+                      "category":  "Green (Safe)",
+                      "women_cases":  60,
+                      "rape_cases":  9
+                  },
+        "location":  {
+                         "lat":  12.88,
+                         "lng":  79.22
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Anaicut",
+        "crime":  {
+                      "score":  43.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  55,
+                      "rape_cases":  8
+                  },
+        "location":  {
+                         "lat":  12.78,
+                         "lng":  79.1
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Kaniyambadi",
+        "crime":  {
+                      "score":  55,
+                      "category":  "Green (Safe)",
+                      "women_cases":  70,
+                      "rape_cases":  10
+                  },
+        "location":  {
+                         "lat":  12.89,
+                         "lng":  79.16
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Pennathur",
+        "crime":  {
+                      "score":  39,
+                      "category":  "Green (Safe)",
+                      "women_cases":  50,
+                      "rape_cases":  7
+                  },
+        "location":  {
+                         "lat":  12.85,
+                         "lng":  79.2
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Ussoor",
+        "crime":  {
+                      "score":  48,
+                      "category":  "Green (Safe)",
+                      "women_cases":  60,
+                      "rape_cases":  9
+                  },
+        "location":  {
+                         "lat":  12.88,
+                         "lng":  79.08
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Thiruvalam",
+        "crime":  {
+                      "score":  43.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  55,
+                      "rape_cases":  8
+                  },
+        "location":  {
+                         "lat":  12.8,
+                         "lng":  79.25
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Odugathur",
+        "crime":  {
+                      "score":  34.5,
+                      "category":  "Green (Safe)",
+                      "women_cases":  45,
+                      "rape_cases":  6
+                  },
+        "location":  {
+                         "lat":  12.77,
+                         "lng":  78.9
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "K.V. Kuppam",
+        "crime":  {
+                      "score":  39,
+                      "category":  "Green (Safe)",
+                      "women_cases":  50,
+                      "rape_cases":  7
+                  },
+        "location":  {
+                         "lat":  12.7,
+                         "lng":  79.2
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Chennai",
+        "district":  "Chennai",
+        "crime":  {
+                      "score":  85,
+                      "category":  "Red (High)",
+                      "women_cases":  0,
+                      "rape_cases":  0
+                  },
+        "location":  {
+                         "lat":  13.0827,
+                         "lng":  80.2707
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Madurai",
+        "district":  "Madurai",
+        "crime":  {
+                      "score":  30,
+                      "category":  "Green (Low)",
+                      "women_cases":  0,
+                      "rape_cases":  0
+                  },
+        "location":  {
+                         "lat":  9.9252,
+                         "lng":  78.1198
+                     },
+        "safety_time":  {
+                            "safe":  "6 AM - 9 PM",
+                            "unsafe":  "9 PM - 6 AM"
+                        }
+    },
+    {
+        "place":  "Coimbatore",
+        "district":  "Coimbatore",
+        "crime":  {
+                      "score":  55,
+                      "category":  "Green (Low)",
+                      "women_cases":  0,
+                      "rape_cases":  0
+                  },
+        "location":  {
+                         "lat":  11.0168,
+                         "lng":  76.9558
+                     },
+        "safety_time":  {
+                            "safe":  "7 AM - 11 PM",
+                            "unsafe":  "11 PM - 7 AM"
+                        }
+    },
+    {
+        "place":  "Trichy",
+        "district":  "Trichy",
+        "crime":  {
+                      "score":  45,
+                      "category":  "Green (Low)",
+                      "women_cases":  0,
+                      "rape_cases":  0
+                  },
+        "location":  {
+                         "lat":  10.7905,
+                         "lng":  78.7047
+                     },
+        "safety_time":  {
+                            "safe":  "4 AM - 8 PM",
+                            "unsafe":  "8 PM - 4 AM"
+                        }
+    },
+    {
+        "place":  "Salem",
+        "district":  "Salem",
+        "crime":  {
+                      "score":  0,
+                      "category":  "Green (Low)",
+                      "women_cases":  0,
+                      "rape_cases":  0
+                  },
+        "location":  {
+                         "lat":  11.6643,
+                         "lng":  78.146
+                     },
+        "safety_time":  {
+                            "safe":  "5 AM - 10 PM",
+                            "unsafe":  "10 PM - 5 AM"
+                        }
+    },
+    {
+        "place":  "Thoothukudi",
+        "district":  "Thoothukudi",
+        "crime":  {
+                      "score":  0,
+                      "category":  "Green (Low)",
+                      "women_cases":  0,
+                      "rape_cases":  0
+                  },
+        "location":  {
+                         "lat":  8.7642,
+                         "lng":  78.1348
+                     },
+        "safety_time":  {
+                            "safe":  "6 AM - 9 PM",
+                            "unsafe":  "9 PM - 6 AM"
+                        }
+    }
+]
