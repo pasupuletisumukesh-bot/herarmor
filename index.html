@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Tamil Nadu Map</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2JCOhMc5BqxilF_ppAOAg_yIo-EVfDFo"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2JCOhMc5BqxilF_ppAOAg_yIo-EVfDFo&loading=async" defer></script>
 </head>
 <body>
   <div id="map" style="height: 80vh;"></div>
@@ -11,8 +11,19 @@
     <p id="selected-info" style="margin: 0;">Click on a marker to view safety information.</p>
   </div>
 
-  <script type="module">
-    import { loadDataFromSupabase } from './supabase-config.js';
+  <script>
+    async function loadDataFromJSON() {
+      try {
+        const response = await fetch('combined_data.json');
+        if (!response.ok) throw new Error('Failed to load JSON');
+        const data = await response.json();
+        console.log('Loaded', data.length, 'locations from JSON');
+        return data;
+      } catch (err) {
+        console.error('Error loading JSON:', err.message);
+        return [];
+      }
+    }
 
     async function initMap() {
       const tamilNadu = { lat: 11.1271, lng: 78.6569 };
@@ -31,13 +42,18 @@
         }
       });
 
-      await addMarkersFromSupabase(map);
+      await addMarkersFromJSON(map);
     }
 
-    async function addMarkersFromSupabase(map) {
+    async function addMarkersFromJSON(map) {
       try {
-        const data = await loadDataFromSupabase();
+        const data = await loadDataFromJSON();
         
+        if (!data || data.length === 0) {
+          console.warn('No data loaded');
+          return;
+        }
+
         data.forEach(item => {
           const point = {
             name: item.place,
@@ -88,8 +104,10 @@
             `;
           });
         });
+
+        console.log('Markers added successfully:', data.length);
       } catch (err) {
-        console.error('Error loading data:', err);
+        console.error('Error adding markers:', err);
       }
     }
 
