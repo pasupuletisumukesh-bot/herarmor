@@ -1,0 +1,129 @@
+{
+  "name": "HerArmor API Collection",
+  "description": "REST API endpoints for HerArmor - Crime Safety Map",
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "health"]
+        },
+        "description": "Check if API server is running"
+      }
+    },
+    {
+      "name": "Get All Locations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/locations",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "locations"]
+        },
+        "description": "Retrieve all locations from database"
+      }
+    },
+    {
+      "name": "Get Location by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/locations/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "locations", "1"]
+        },
+        "description": "Get a specific location by ID"
+      }
+    },
+    {
+      "name": "Get Locations by District",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/locations/district/Vellore",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "locations", "district", "Vellore"]
+        },
+        "description": "Get all locations in a specific district"
+      }
+    },
+    {
+      "name": "Add New Location",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"place\": \"New Location\",\n  \"lat\": 12.5,\n  \"lng\": 79.5,\n  \"district\": \"Vellore\",\n  \"rape_cases\": 10,\n  \"women_cases\": 50,\n  \"score\": 65,\n  \"category\": \"Yellow (Moderate)\",\n  \"safe_time\": \"5 AM - 10 PM\",\n  \"unsafe_time\": \"10 PM - 5 AM\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/locations",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "locations"]
+        },
+        "description": "Add a new location to the database"
+      }
+    },
+    {
+      "name": "Update Location",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"score\": 75,\n  \"category\": \"Yellow (Moderate)\",\n  \"rape_cases\": 15,\n  \"women_cases\": 60\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/locations/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "locations", "1"]
+        },
+        "description": "Update an existing location"
+      }
+    },
+    {
+      "name": "Delete Location",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/locations/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "locations", "1"]
+        },
+        "description": "Delete a location by ID"
+      }
+    }
+  ]
+}
